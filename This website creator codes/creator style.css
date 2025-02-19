@@ -1,0 +1,69 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+#parent-tag{
+    border: 2px solid green;
+    border-radius: .50em;
+    width: 100%;
+    padding: 1em;
+    background-color:rgba(9, 178, 245, 0.2);
+}
+.color-change{
+    color: red;
+}
+
+.section-one{
+    text-align: center;
+}
+.section-one img{
+    width: 120px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    border: 4px solid #fe0457;
+    padding: 2px;
+}
+.section-one .para-one{
+    margin-top: 1px;
+    font-size: 1.3em;
+    color: blue;
+}
+.section-one .para-two{
+    font-size: 1.2em;
+    color: blue;
+    margin-top: -.50em;
+}
+.section-two{
+    border: 1px solid black;
+    padding: 1em;
+}
+.section-two p{
+    font-size: 1.4em;
+    color: blue;
+}
+.section-two dt{
+    font-size: 1.1em;
+    color: red;
+}
+.section-two dd{
+    color: green;
+}
+.section-two ul li{
+    color: red;
+    margin-top: .50em;
+}
+.section-two ul li{
+    color: green;
+    font-size: 1.1em;
+}
+.contact-details a{
+    display: block;
+    text-decoration: none;
+    color: green;
+    margin-top: .25em;
+}
+.contact-details span{
+    color: red;
+}
