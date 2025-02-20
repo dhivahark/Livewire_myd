@@ -18,9 +18,10 @@ body{
     text-align: center;
 }
 .section-one img{
-    width: 120px;
-    height: 90px;
-    border-radius: 50%;
+    width: 13em;
+    box-sizing: border-box;
+    height: 9em;
+    border-radius: 1em;
     margin-bottom: 5px;
     border: 4px solid #fe0457;
     padding: 2px;
