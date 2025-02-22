@@ -1,0 +1,494 @@
+ /* Start the Header properties and values*/
+ :root{
+    --yellow:#ffC54D;
+    --green:#53BF9D;
+    --red:crimson;
+    --white:whitesmoke;
+}
+header .one{
+    background-color: blue;
+}
+#navbartwo .navbarthree{
+    margin-left: 8em;
+}
+
+header #using-sticky{
+    position: fixed;
+    top: 0em;
+    z-index: 100;
+    width: 100%;
+}
+
+
+#navbartwo .navbarthree .navbarfour{
+    margin-left: 2em;
+}
+#navbartwo ul li{
+    position: relative;
+}
+#navbartwo ul li ul.dropdown-menu{
+    border: 1px solid pink;
+    position: absolute;
+    left: 0;
+    top: 2.5em;
+}
+#navbartwo ul li #moveleft.dropdown-menu{
+    right: 2.5em;
+}
+.dropdown-menu li .backcolor:hover{
+    background-color: green;
+}
+.backcolors li a:hover{
+    color: green;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    background-color: green;
+    border-radius: .50em;
+}
+
+
+              /*media queries for navbar starting here*/
+
+
+@media(max-width:992px){
+    #navbartwo ul li ul.dropdown-menu{
+        position: relative;
+        left: 0;
+        top: .20em;
+        width: 350px;
+    }
+
+}
+@media(max-width:1100px){
+    #navbartwo .navbarthree{
+        margin-left: 5em;
+    }
+    #navbartwo .navbarthree .navbarfour{
+        margin-left: 1em;
+    }
+}
+@media(max-width:1055px){
+    #navbartwo .navbarthree{
+        margin-left: 2.8em;
+    }
+    #navbartwo .navbarthree .navbarfour{
+        margin-left: .70em;
+    }
+}
+@media(max-width:430px){
+    #navbartwo .navbarthree{
+        margin-left: 0em;
+    }
+    #navbartwo ul li ul.dropdown-menu{
+        width: 330px;
+    }
+    #navbartwo .navbarthree .navbarfour{
+        margin-left: .2em;
+    }
+}
+@media(max-width:390px){
+    #navbartwo ul li ul.dropdown-menu{
+        width: 270px;
+    }
+}
+
+                      /* Modal */
+.space-top div{
+    margin-top: 1em;
+}
+.space-top .space{
+    padding-bottom: .50em;
+}
+.animation-colors{
+    animation-name: justcolor;
+    animation-duration: 20s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+@keyframes justcolor{
+    0%{
+        color: red;
+    }
+    50%{
+        color: black;
+    }
+    100%{
+        color: blue;
+    }
+}
+
+
+.using-flex{
+    display: flex;
+    
+}
+.using-flex i{
+    font-size: 1.5em;
+    margin-top: .18em;
+}
+.using-flex p{
+    margin-left: .35em;
+    font-size: 1.1em;
+}
+#bgcolorsofall{
+    background-color:rgba(9, 178, 245, 0.2);
+    border-radius: .50em;
+    margin-top: 1em;
+    border-left: 1px solid orange;
+}
+.fontbig::first-line{
+    font-weight: bolder;
+    color: red;
+}
+.fontbig{
+    color: green;
+}
+.top-bottom-space li{
+    margin-top: .50em;
+    color: green;
+}
+
+
+
+                  /*.................promise....................*/
+
+.promise-informations{
+    border: 6px solid rgb(0, 0, 102);
+    padding: 1em;
+    height: 22em;
+    border-radius: .50em;
+    color: white;
+}
+.img-size{
+    width: 4.5em;
+    height: 3em;
+}
+.pad-top{
+    margin-top: 1em;
+}
+
+
+      /*card slider css styling */
+
+
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.full-card-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 77.5vh;
+  padding-top: 2em;
+  background: url("/card slider images/BGimg4.png") #01062d no-repeat center;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 70px 55px;
+}
+
+.card-list .card-item {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    height: 22em;
+    padding: 1em;
+  backdrop-filter: blur(30px);
+  background: #ffffff33;
+  border: 1px solid #ffffff80;
+}
+
+.card-list .card-item .user-image {
+  width: 100px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #fe0457;
+  padding: 2px;
+}
+.card-list .card-item .user-name{
+  font-size: 17.5px;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.card-list .card-item .user-profession {
+  font-size: 16px;
+  color: #e3e3e3;
+  font-weight: 500;
+  margin: 14px 0 40px;
+}
+
+.card-list .card-item .message-btn:hover {
+  background: #ffffff1a;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+  background: #fff;
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+}
+
+.slider-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.slider-wrapper .swiper-slide-button {
+  color: #fff;
+  margin-top: -55px;
+  transition: 0.5s;
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+  color: #fe0457;
+}
+@media screen and (max-width: 768px) {
+  .slider-wrapper{
+    margin: 0 20px 40px;
+    padding: 0 30px;
+  }
+}
+
+
+
+/*footer*/
+.direction{
+    display: flex;
+    flex-direction: column;
+}
+.direction a,.list-style{
+    text-decoration: none;
+}
+.list-style-one{
+    text-decoration: none;
+    border: 1px solid black;
+    border: none;
+    margin-bottom: .20em;
+    padding: .25em;
+    color: white;
+    text-align: center;
+    background-color: rgb(53, 53, 103)
+}
+.list-style-one:hover{
+    background-color: green;
+}
+.hole-footer{
+    background-color: rgba(9, 178, 245, 0.2);
+}
+.heading-size{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.atag-modify{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.social-media{
+    border: 1px solid lightslategrey;
+    padding: .25em;
+    border-radius: 1em;
+}
+.social-media:hover{
+    background-color: green;
+    color: white;
+}
+.img-font-two{
+    font-size: 1.1em;
+    animation-name: somecolors;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+.img-font-two:hover{
+    color: green;
+    animation: none;
+}
+@keyframes somecolors{
+    0%{
+        color: red;
+    }
+    50%{
+        color: blue;
+    }
+    100%{
+        color: orangered;
+    }
+}
+@media(max-width:767px){
+    .marginanchertag{
+        padding-top: 2em;
+    }
+}
+
+
+
+
+/*accordion  accordion*/
+.accordion{
+    color: #fff;
+    background: #1c1c1c;
+}
+.accordion-heading{
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-size: 2rem;
+    margin: 1.5rem 0rem;
+}
+.faq{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question h4{
+    font-size: 1.4rem;
+}
+.answer p{
+    padding-top: .50rem;
+    line-height: 1.3;
+    font-size: 1rem;
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+.faq.active .answer{
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+.faq.active svg{
+    transform: rotate(180deg);
+}
+
+svg{
+    transition: transform 0.5s ease-in;
+}
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/*whatsapp css codes*/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/*footer css*/
+@media(max-width:992px){
+    #quick-link{
+        margin-top: 1em;
+    }
+    .heading-size{
+        margin-top: 1em;
+    }
+}
+.content-responsive{
+    height: 50px;
+}
+#color-hover:hover{
+    background-color: green;
+}
+@media(max-width:510px){
+    #responsive{
+        flex-direction: column;
+    }
+    #responsive img{
+        width: 12em; 
+        height: 4em;
+        margin-top: .50em;
+    }
+    #left-space{
+        margin-left: -1.5em;
+    }
+    .content-responsive{
+        flex-wrap: wrap;
+        height: 100px;
+    }
+}
+
+.side-space{
+    text-decoration: none;
+    font-size: 1.1em;
+    color: red;
+}
+.side-space:hover{
+    color: green;
+}
+.side-spaces:hover{
+    color: white;
+    background-color: green;
+}
+.side-spaces{
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: .25em;
+    margin-right: .50em;
+    background-color: black;
+    color: white;
+}
+
+.pad-top{
+    margin-top: 1em;
+    color: white
+}
+@media(max-width:570px){
+    .question h4{
+        font-size: 1.1em;
+    }
+}
+@media(max-width:510px){
+    .map-designs{
+        width: 300px;
+    }
+}
